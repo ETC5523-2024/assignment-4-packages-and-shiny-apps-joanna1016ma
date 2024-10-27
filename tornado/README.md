@@ -10,7 +10,6 @@ The goal of tornado is to load the data of tornadoes in United States in
 1950-2022 and visualize with shiny. The package includes the tornado
 dataset and a shiny app to visualize the data. The pkgdown site is
 available
-[here](https://etc5523-2024.assignment-4-packages-and-shiny-apps-joanna1016ma.tornado.org/)
 
 ## Installation
 
