@@ -1,8 +1,11 @@
-url: ~
+url: https://etc5523-2024.github.io/assignment-4-packages-and-shiny-apps-joanna1016ma/
 template:
   bootstrap: 5
+home:
+  title: "Welcome to the tornado package documentation"
+  description: "This package downloads dataset of tornadoes data."
 articles:
   - title: "Vignettes"
     contents:
       - "tornado"
-
+readme: true
