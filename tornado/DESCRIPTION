@@ -1,15 +1,23 @@
 Package: tornado
-Title: What the Package Does (One Line, Title Case)
+Title: Tornado dataset
 Version: 0.0.0.9000
 Authors@R: 
-    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
-           comment = c(ORCID = "YOUR-ORCID-ID"))
-Description: What the package does (one paragraph).
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+    person("Sun Yan Joanna", "Ma", , "smaa0048@student.monash.edu", role = c("aut", "cre"))
+Description: The package contains the United States 1950-2022 tornado data.
+License: MIT liscense
+URL: https://etc5523-2024.assignment-4-packages-and-shiny-apps-joanna1016ma.tornado.org/
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.2
 Depends: 
     R (>= 2.10)
 LazyData: true
+Suggests: 
+    knitr,
+    rmarkdown, 
+    tidyverse
+VignetteBuilder: knitr
+Imports: 
+    dplyr,
+    ggplot2,
+    shiny

@@ -1,0 +1,35 @@
+---
+title: "Tornado Data and Visualization"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{tornado}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+This package includes data downloaded from [Tidy Tuesday](https://github.com/rfordatascience/tidytuesday/tree/master/data/2023/2023-05-16) from the Data Science Learning Community. The data can be accessed by loading the `tornado` and calling on the object `tornados`, or alternatively using `tornado::tornados`.
+
+```{r setup}
+library(tornado)
+library(tidyverse)
+tornados
+```
+
+Below is a histogram to visualize the tornado magnitude counts of each level:
+
+```{r}
+
+## Histogram example
+tornados |> 
+  ggplot(aes(x = mag)) + 
+  geom_histogram()
+
+```
+
